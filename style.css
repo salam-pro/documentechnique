@@ -1,0 +1,108 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+#header div{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    padding-top: 16px;
+}
+#header header{
+    width: 100%;
+    height: 100px;
+    font-size: 28px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding-top:15px;
+}
+#main-doc{
+    background-color: aqua;
+    padding-left: 15px;
+    border-left: 2px solid black;
+}
+#header div{
+    background-color: red;
+    position: static;
+}
+#main-doc{
+    background-color: aqua;
+    padding-left: 15px;
+    border-left: 2px solid black;
+}
+
+#header{
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#header a{
+    display: inline-block; 
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border:2px solid black;
+    color: white;
+}
+#main-doc header{
+    font-size:24px ;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px auto;
+    color: black;
+}
+#main-doc p,#main-doc ul{
+    padding:6px 6px 6px 15px;
+}
+#main-doc ul{
+    margin-left: 40px;
+}
+#main-doc  code{
+    background-color: lightgray;
+    padding: 6px 0px;
+    margin: 6px auto;
+    width: 95%;
+    display: inline-block;
+}
+@media (min-width:1200px) {
+    *{
+        padding:0px;
+        margin: 0px;
+    }
+    body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+    #header{
+        height: 700px;
+        overflow:  hidden scroll;
+        
+    }
+    #header a{
+        font-size: 24px;
+    }
+    #header  header{
+        position: sticky;
+        top: 0px;
+        height: 100px;
+    }
+    #main-doc{
+        height: 735px;
+        overflow: scroll;
+    }
+    }
